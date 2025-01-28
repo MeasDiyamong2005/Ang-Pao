@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f0e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .countainer {
+    width: 100%;
+  }
+  h2{
+    text-align: center;
+    color: #dd2828;
+  }
+  .ang-pao {
+    position: relative;
+    width: 430px;
+    height: 590px;
+    background-image: url("pngtree-new-year-sign-sign-seeking-new-year-picture-image_972416.jpg");
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .ang-pao .top-flap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: none;
+    transform-origin: top;
+    transition: transform 0.5s ease;
+  }
+  .ang-pao.open .top-flap {
+    transform: rotateX(180deg);
+  }
+  .money {
+    position: absolute;
+    bottom: -600px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 520px;
+    height: 550px;
+    border-radius: 5px;
+    background: none;
+    background-image: url("photo_2025-01-28_15-31-30.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; /* Adjusted background size for better scaling */
+    /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
+    transition: bottom 0.5s ease;
+  }
+  .open .money {
+    bottom: 20px;
+    
+  }
+  .ang-pao.open {
+      background: linear-gradient(45deg, #ff3d3d, #d91e18);
+  }
+  .ang-pao .money::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    /* text-shadow: 1px 1px 3px black; */
+  }
